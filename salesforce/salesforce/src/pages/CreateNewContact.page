@@ -1,0 +1,37 @@
+<apex:page standardController="Contact" sideBar="false" showHeader="false" extensions="Contact_Controller">
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+        
+            <div data-role="header">
+                <h2>Create Contact</h2>
+            </div>
+            
+            <div data-role="content">
+            	<apex:form >
+            		<apex:pageMessages />
+            		<h2>{!$ObjectType.contact.fields.FirstName.label}</h2>
+            		<apex:inputField value="{!Contact.FirstName}" />
+            		
+            		<br/>
+            		<h2>{!$ObjectType.contact.fields.LastName.label}</h2>
+            		<apex:inputField value="{!Contact.LastName}" />
+            		
+            		<br/>
+            		<h2>{!$ObjectType.Contact.fields.AccountId.label}</h2>
+						<apex:selectList value="{!selectedAccount}" size="1">
+	                        <apex:selectOptions value="{!AllAccounts}"/>
+                        </apex:selectList>
+            		
+            		<br/>
+            		<apex:commandButton action="{!save}" value="Save" />
+            	</apex:form>
+            </div>
+        </div>
+    </body>
+</apex:page>

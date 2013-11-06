@@ -1,0 +1,14 @@
+<apex:page standardController="Account">
+    <apex:form >
+        <apex:pageBlock title="Create Account for User {!$User.FirstName}">
+            <apex:pagemessages />
+            <apex:pageBlockSection >
+                <apex:inputField value="{!account.Name}"/>
+                <apex:inputCheckbox value="{!account.Newsletter__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>   
+    </apex:form>
+</apex:page>
