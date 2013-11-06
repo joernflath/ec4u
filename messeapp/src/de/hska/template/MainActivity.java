@@ -1,4 +1,4 @@
-package de.unimannheim.template;
+package de.hska.template;
 
 import android.os.Bundle;
 import android.app.Activity;
