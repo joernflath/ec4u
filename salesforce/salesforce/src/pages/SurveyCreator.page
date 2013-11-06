@@ -1,0 +1,16 @@
+<apex:page standardController="SurveyPart__c" extensions="SurveyPart_Controller">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages />
+                <apex:pageBlockSection >
+                    <apex:selectList id="type" value="{!SurveyPart__c.Type__c}" size="1" required="true">
+                        <apex:selectOptions value="{!types}"/>
+                    </apex:selectList>
+                    <apex:inputField id="text" value="{!SurveyPart__c.Text__c}" required="true"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockButtons >
+                    <apex:commandButton Value="Save" action="{!save}"/>
+                </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
