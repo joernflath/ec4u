@@ -1,22 +1,35 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="lib/js/cordova-2.1.0.js"></script>
-		<script type="text/javascript" charset="utf-8" src="lib/js/geolocation.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				window.scrollTo(0, 1);
-				window.setTimeout(function() {
-					window.location = "http://awpec4u-developer-edition.eu2.force.com/surveycreate";
-				}, 2000);
-			});
+		<script type="text/javascript" language="JavaScript">
+			function openWLANPopup()
+			{
+			    alert("WLAN Schluessel");
+			}
 		</script>
+		
+		<style>
+		    .Header { background-color:#989898; widht:100%; }
+		    .Button { background-color:#43AEF5; color:#fff; width:49.5%; height:80px; }
+        </style>
 	</head>
+	
 	<body>
-	<h1>Ortsbestimmung</h1>
-	<div id="location"></div>
+		<div id="header" class="Header">
+			<input type="button" value="Logout">
+                <b>Main Menu</b>
+                </div>
+		<div id="content" data-role="content">
+			<p>
+            <input class="Button" type="button" value="WLAN" onclick="openWLANPopup()"/>
+            <input class="Button" type="button" value="Navigation"/>
+			</p>
+			<p>
+            <input class="Button" type="button" value="Ticket"/>
+            <input class="Button" type="button" value="Map"/>
+			</p>
+			<p>
+			</p>
+		</div>
 	</body>
 </html>

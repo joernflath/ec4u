@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <style>
+            /*this block should go in the styles.css file*/
+            .ui-panel-inner {
+                padding:0px; /*make the buttons flush edge to edge*/
+            }
+            .ui-controlgroup {
+                margin:0; /*make the buttons flush to the top*/
+            }
+            #header {
+                height:55px;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="mainPage" data-theme="b">
+
+            <div id="navpanel" data-role="panel" data-display="overlay" data-position="left">
+                <div data-role="controlgroup" data-corners="false">
+                    <a data-role="button">WLAN</a>
+                    <a data-role="button">Navigation</a>
+                    <a data-role="button">Ticket</a>
+                    <a data-role="button">Map</a>
+                </div>
+            </div>
+
+            <div id="header" data-role="header" data-theme="b">
+                <a id="menu-button" data-icon="bars" class="ui-btn-left" style="margin-top:10px;" href="#navpanel">Menu</a>
+                <h1 align="center" style="margin-top:20px;">Fair Stand List</h1>
+                <a id="logout" class="ui-btn-right" style="margin-top:10px;" href="#">Logout</a>
+            </div>
+            
+            <div id="content" data-role="content" data-theme="c">
+                <table border="2px" width="100%">
+                	<tr>
+                        <td>Apple</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung</td>
+                    </tr>
+                    <tr>
+                        <td>HTC</td>
+                    </tr>
+                    <tr>
+                        <td>Asus</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
