@@ -1,7 +1,9 @@
 @CHARSET "ISO-8859-1";
 
 .ui-panel-inner {
-	 padding:0px;    
+	 padding:0px;
+	 margin:0px;
+	 border:0px;    
 	/*make the buttons flush edge to edge*/
 }
 .ui-controlgroup {
