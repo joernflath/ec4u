@@ -1,14 +1,15 @@
-<apex:page standardController="SurveyPart__c" extensions="SurveyPart_Controller">
+<apex:page Controller="SurveyPart_Controller" showHeader="false">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <apex:form >
         <apex:pageBlock >
             <apex:pageMessages />
                 <apex:pageBlockSection >
-                    <apex:selectList id="type" value="{!SurveyPart__c.Type__c}" size="1" required="true">
+                    <apex:selectList id="type" value="{!surveypart.Type__c}" size="1" required="true">
                         <apex:selectOptions value="{!types}"/>
                     </apex:selectList>
-                    <apex:inputField id="text" value="{!SurveyPart__c.Text__c}" required="true"/>
+                    <apex:inputField id="text" value="{!surveypart.Text__c}" required="true"/>
                 </apex:pageBlockSection>
-                <apex:pageBlockButtons >
+                <apex:pageBlockButtons location="bottom">
                     <apex:commandButton Value="Save" action="{!save}"/>
                 </apex:pageBlockButtons>
         </apex:pageBlock>

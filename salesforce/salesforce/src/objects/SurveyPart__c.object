@@ -88,6 +88,22 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>SurveyParts</pluralLabel>
+    <recordTypes>
+        <fullName>testrec</fullName>
+        <active>true</active>
+        <label>testrec</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Freitext</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Schieberegler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
