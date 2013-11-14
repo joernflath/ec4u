@@ -4,20 +4,20 @@ window.onload = function (){
 			navigator.geolocation.getCurrentPosition(success, error);
 		}
 		else {
-			document.getElementById('content').innerHTML = "Geolokation ist nicht möglich";
+			document.getElementById('content2').innerHTML = "Geolokation ist nicht möglich";
 		}
 	}, false);
 }
 
 
 function success(position){
-	document.getElementById('content').innerHTML = 
+	document.getElementById('content2').innerHTML = 
 		"Breitengrad: " + position.coords.latitude +
 		"<br/>Längengrad: " + position.coords.longitude + 
 		"<br/>Zeitstempel: " + position.timestamp;
 }
 
 function error(msg){
-	document.getElementById('content').innerHTML =
+	document.getElementById('content2').innerHTML =
 		"Fehler bei der Lokalisierung: <br/>" + msg;
 }
