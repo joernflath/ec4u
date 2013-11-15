@@ -54,6 +54,11 @@
     <plugin name="Battery" value="org.apache.cordova.BatteryListener"/>
     <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
     <plugin name="Echo" value="org.apache.cordova.Echo" />
+    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 </plugins>
+	<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+</feature>
+
 </cordova>
 
