@@ -1,49 +1,43 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	
-<script type="text/javascript" charset="utf-8" src="lib/js/cordova-2.1.0.js"></script>
-<script type="text/javascript" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="lib/js/cordova-2.1.0.js"></script>
+		<script type="text/javascript" charset="utf-8">
 
-// Wait for Cordova to load
-//
-function onLoad() {
-document.addEventListener("deviceready", onDeviceReady, false);
-}
+			// Wait for Cordova to load
+			//
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
 
-// Cordova is ready
-//
-function onDeviceReady() {
-/*
-var ref = window.open('http://apache.org', '_blank', 'location=yes');
-ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-ref.addEventListener('exit', function(event) { alert(event.type); });
-*/
-}
-</script>
+			// Cordova is ready
+			//
+			function onDeviceReady() {
+			/*
+			var ref = window.open('http://apache.org', '_blank', 'location=yes');
+			ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+			ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+			ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+			ref.addEventListener('exit', function(event) { alert(event.type); });
+			*/
+			}
+		</script>
 
-	<style>
-
-    </style>
+		<style>
+    	</style>
+    	
 	</head>
 	
 	<body onLoad="onLoad()">
-	<div data-role="page" id="mainPage" data-theme="b">
-	
+		<div data-role="page" id="mainPage" data-theme="b">
 			<div id="header" data-role="header" data-theme="b">
-                <a id="menu-button" data-icon="grid" class="ui-btn-left" style="margin-top:10px;" href="#navpanel">Menu</a>
                 <h1 align="center" style="margin-top:15px; font-size:20px;">Navigation</h1>
                 <a id="mainMenu" class="ui-btn-right" style="margin-top:10px;" href="slidingMenu.html">Zurück</a>
             </div>
-		
 		     <div id="content" data-role="content">
          		<p> Wenn Sie auf diesen Button klicken, werden Sie auf www.maps.google.de weitergeleitet!</p>
 				<input type="button" id="button1" onclick="window.open('https://maps.google.de/maps?q=49.0047,8.3858','_blank','location=yes','closebuttoncaption=Return');" value="Click Here">
-
-			</div>
-		
-	</div>
+			</div>	
+		</div>
 	</body>
 </html>
