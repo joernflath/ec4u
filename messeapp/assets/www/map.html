@@ -30,17 +30,17 @@ ref.addEventListener('exit', function(event) { alert(event.type); });
 	</head>
 	
 	<body onLoad="onLoad()">
-	<div data-role="page" id="mainPage" data-theme="b" >
+	<div data-role="page" id="mainPage" data-theme="b">
 	
-		<div id="header" data-role="header" data-theme="b">
-                <a id="zurück-button" data-icon="bars" class="ui-btn-left" style="margin-top:10px;" href="slidingMenu.html">Zurück</a>
-                <h1 align="center" style="margin-top:20px;">Messegelände</h1>
-                
-		</div>
+			<div id="header" data-role="header" data-theme="b">
+                <a id="menu-button" data-icon="grid" class="ui-btn-left" style="margin-top:10px;" href="#navpanel">Menu</a>
+                <h1 align="center" style="margin-top:15px; font-size:20px;">Navigation</h1>
+                <a id="mainMenu" class="ui-btn-right" style="margin-top:10px;" href="slidingMenu.html">Zurück</a>
+            </div>
 		
 		     <div id="content" data-role="content">
-         
-				<input type="button" id="button1" onclick="window.open('http://maps.google.de','_blank','location=no','closebuttoncaption=Return');" value="Click Here">
+         		<p> Wenn Sie auf diesen Button klicken, werden Sie auf www.maps.google.de weitergeleitet!</p>
+				<input type="button" id="button1" onclick="window.open('https://maps.google.de/maps?q=49.0047,8.3858','_blank','location=yes','closebuttoncaption=Return');" value="Click Here">
 
 			</div>
 		
