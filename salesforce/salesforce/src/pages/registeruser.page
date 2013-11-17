@@ -1,0 +1,6 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+<h2>Congratulations</h2> 
+  This is your new Page: registeruser
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
